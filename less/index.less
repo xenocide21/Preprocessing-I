@@ -105,3 +105,38 @@ header{
 	
 }
 
+#main-content{
+	
+	.upper-content{
+		display: flex;
+		border-bottom: 2px dotted lightblue;
+		#about{
+			margin:.5em;
+			margin-left: 3em;
+			padding: .5em;
+			max-width: 49%;
+			h1{
+				margin-left: -.5em;
+				margin-bottom: 0.5em;
+				max-width: 5em;
+				padding: .25em;
+				background: lightblue;
+				border: 2px solid rgb(0, 88, 117);
+			}
+		}
+		.abimg{
+			max-width: 80%;
+			margin: 2em;
+			
+		}
+		@media (max-width: 500px){
+			flex-direction: column;
+			.abimg{
+				max-width: 27em;
+				height: auto;
+			}
+		}
+	} //this is upper content
+
+
+}

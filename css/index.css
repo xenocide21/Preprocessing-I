@@ -175,3 +175,34 @@ header .top-nav a:hover {
     flex-direction: column;
   }
 }
+#main-content .upper-content {
+  display: flex;
+  border-bottom: 2px dotted lightblue;
+}
+#main-content .upper-content #about {
+  margin: 0.5em;
+  margin-left: 3em;
+  padding: 0.5em;
+  max-width: 49%;
+}
+#main-content .upper-content #about h1 {
+  margin-left: -0.5em;
+  margin-bottom: 0.5em;
+  max-width: 5em;
+  padding: 0.25em;
+  background: lightblue;
+  border: 2px solid #005875;
+}
+#main-content .upper-content .abimg {
+  max-width: 80%;
+  margin: 2em;
+}
+@media (max-width: 500px) {
+  #main-content .upper-content {
+    flex-direction: column;
+  }
+  #main-content .upper-content .abimg {
+    max-width: 27em;
+    height: auto;
+  }
+}
