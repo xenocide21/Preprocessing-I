@@ -283,11 +283,16 @@ header .top-nav a:hover {
 }
 #main-content .lower-content {
   border-top: 2px dotted lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #main-content .lower-content #whmain {
   text-align: center;
   margin: 2%;
-  text-decoration: underline;
+  width: 11em;
+  background: lightblue;
+  border: 2px solid #005875;
 }
 @media (max-width: 500px) {
   #main-content .lower-content #whmain {
@@ -314,7 +319,7 @@ header .top-nav a:hover {
   margin-top: 0.2%;
 }
 #main-content .lower-content #cred .yrs {
-  margin-top: 0.4%;
+  margin-top: 0.7%;
 }
 @media (max-width: 500px) {
   #main-content .lower-content #cred {
@@ -332,7 +337,8 @@ header .top-nav a:hover {
   border: 2px solid #005875;
   background-color: lightblue;
   width: 30%;
-  margin-left: 39%;
+  align-items: center;
+  margin: auto;
 }
 @media (max-width: 500px) {
   #info .contact {
