@@ -187,6 +187,7 @@ header .top-nav a:hover {
 }
 #main-content .upper-content {
   display: flex;
+  flex-direction: row-reverse;
   border-bottom: 2px dotted lightblue;
 }
 #main-content .upper-content #about {
