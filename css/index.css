@@ -1,1 +1,360 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 1000px;
+  margin: auto;
+}
+@font-face {
+  font-family: 'Big Shoulders Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Big Shoulders Text Regular'), local('BigShouldersText-Regular'), url(https://fonts.gstatic.com/s/bigshoulderstext/v1/55xxezRtP9G3CGPIf49hxc8P0eytUxBcm4Z_.ttf) format('truetype');
+}
+h1 {
+  font-family: 'Big Shoulders Text', cursive;
+}
+header {
+  background-image: url("../img/navimg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 18em;
+}
+header img#navimg {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+header .header-main {
+  position: absolute;
+  margin: 2em;
+  width: auto;
+}
+header .top-nav {
+  overflow: hidden;
+  background-color: #333;
+}
+header .top-nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1em 1.2em;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+header .top-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+@media (max-width: 500px) {
+  header .top-nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#main-content .upper-content {
+  display: flex;
+  flex-direction: row-reverse;
+  border-bottom: 2px dotted lightblue;
+}
+#main-content .upper-content #about {
+  margin: 0.5em;
+  margin-left: 3em;
+  padding: 0.5em;
+  max-width: 49%;
+}
+#main-content .upper-content #about h1 {
+  text-align: center;
+  margin-left: -0.5em;
+  margin-bottom: 0.5em;
+  max-width: 5em;
+  padding: 0.25em;
+  background: lightblue;
+  border: 2px solid #005875;
+}
+#main-content .upper-content .abimg {
+  max-width: 80%;
+  margin: 2em;
+}
+@media (max-width: 500px) {
+  #main-content .upper-content {
+    flex-direction: column;
+  }
+  #main-content .upper-content #about {
+    max-width: 27em;
+  }
+  #main-content .upper-content .abimg {
+    max-width: 27em;
+    height: auto;
+  }
+}
+#main-content .middle-content .exp {
+  margin: 2em;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3em;
+}
+#main-content .middle-content .exp .exp-text {
+  margin-top: 5em;
+}
+#main-content .middle-content .exp .exp-text h1 {
+  text-align: center;
+  margin: 0.5em;
+  padding: 0.25em;
+  max-width: 6em;
+  background: lightblue;
+  border: 2px solid #005875;
+}
+#main-content .middle-content .exp .exp-text ul a {
+  float: left;
+  width: 20em;
+  margin: 0.25em;
+  margin-left: 1em;
+  padding: 0.5em;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  overflow: hidden;
+  color: black;
+  border: 1px solid #005875;
+}
+#main-content .middle-content .exp .exp-text ul.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+#main-content .middle-content .exp .exp-text .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 25em;
+  background-color: lightblue;
+  border: 1px solid #005875;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+}
+#main-content .middle-content .exp .exp-text .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+#main-content .middle-content .exp .work .business {
+  max-width: 30em;
+  margin: 0.5em;
+}
+@media (max-width: 500px) {
+  #main-content .middle-content .exp .work .business {
+    display: none;
+  }
+}
+#main-content .lower-content {
+  border-top: 2px dotted lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main-content .lower-content #whmain {
+  text-align: center;
+  margin: 2%;
+  width: 11em;
+  background: lightblue;
+  border: 2px solid #005875;
+}
+@media (max-width: 500px) {
+  #main-content .lower-content #whmain {
+    text-align: left;
+    margin-left: 18.5%;
+  }
+}
+#main-content .lower-content #cred {
+  display: flex;
+  justify-content: space-evenly;
+}
+#main-content .lower-content #cred div h1 {
+  margin-bottom: 4%;
+  text-decoration: underline;
+}
+#main-content .lower-content #cred div ul li {
+  margin-bottom: 3px;
+  border-bottom: 1px solid #005875;
+}
+#main-content .lower-content #cred .emp {
+  margin-top: -0.1%;
+}
+#main-content .lower-content #cred .pos {
+  margin-top: 0.2%;
+}
+#main-content .lower-content #cred .yrs {
+  margin-top: 0.7%;
+}
+@media (max-width: 500px) {
+  #main-content .lower-content #cred {
+    justify-content: unset;
+    margin-left: 4%;
+  }
+}
+#info .contact {
+  list-style: none;
+  padding: 0;
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #005875;
+  background-color: lightblue;
+  width: 30%;
+  align-items: center;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  #info .contact {
+    margin-left: 10%;
+  }
+}
+#info .contact li {
+  margin: 3%;
+  padding: 0.25em;
+  border: 1px solid #005875;
+  font-size: 0.8em;
+  left: 0;
+  line-height: 1.35em;
+  text-align: center;
+  margin: auto;
+}
+#info .contact li a {
+  margin-top: 2%;
+}
