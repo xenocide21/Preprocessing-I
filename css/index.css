@@ -276,3 +276,79 @@ header .top-nav a:hover {
   max-width: 30em;
   margin: 0.5em;
 }
+@media (max-width: 500px) {
+  #main-content .middle-content .exp .work .business {
+    display: none;
+  }
+}
+#main-content .lower-content {
+  border-top: 2px dotted lightblue;
+}
+#main-content .lower-content #whmain {
+  text-align: center;
+  margin: 2%;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  #main-content .lower-content #whmain {
+    text-align: left;
+    margin-left: 18.5%;
+  }
+}
+#main-content .lower-content #cred {
+  display: flex;
+  justify-content: space-evenly;
+}
+#main-content .lower-content #cred div h1 {
+  margin-bottom: 4%;
+  text-decoration: underline;
+}
+#main-content .lower-content #cred div ul li {
+  margin-bottom: 3px;
+  border-bottom: 1px solid #005875;
+}
+#main-content .lower-content #cred .emp {
+  margin-top: -0.1%;
+}
+#main-content .lower-content #cred .pos {
+  margin-top: 0.2%;
+}
+#main-content .lower-content #cred .yrs {
+  margin-top: 0.4%;
+}
+@media (max-width: 500px) {
+  #main-content .lower-content #cred {
+    justify-content: unset;
+    margin-left: 4%;
+  }
+}
+#info .contact {
+  list-style: none;
+  padding: 0;
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #005875;
+  background-color: lightblue;
+  width: 30%;
+  margin-left: 39%;
+}
+@media (max-width: 500px) {
+  #info .contact {
+    margin-left: 10%;
+  }
+}
+#info .contact li {
+  margin: 3%;
+  padding: 0.25em;
+  border: 1px solid #005875;
+  font-size: 0.8em;
+  left: 0;
+  line-height: 1.35em;
+  text-align: center;
+  margin: auto;
+}
+#info .contact li a {
+  margin-top: 2%;
+}
