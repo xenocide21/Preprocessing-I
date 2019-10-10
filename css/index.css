@@ -136,6 +136,16 @@ body {
   width: 1000px;
   margin: auto;
 }
+@font-face {
+  font-family: 'Big Shoulders Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Big Shoulders Text Regular'), local('BigShouldersText-Regular'), url(https://fonts.gstatic.com/s/bigshoulderstext/v1/55xxezRtP9G3CGPIf49hxc8P0eytUxBcm4Z_.ttf) format('truetype');
+}
+h1 {
+  font-family: 'Big Shoulders Text', cursive;
+}
 header {
   background-image: url("../img/navimg.jpg");
   background-position: center;
@@ -186,6 +196,7 @@ header .top-nav a:hover {
   max-width: 49%;
 }
 #main-content .upper-content #about h1 {
+  text-align: center;
   margin-left: -0.5em;
   margin-bottom: 0.5em;
   max-width: 5em;
@@ -201,8 +212,66 @@ header .top-nav a:hover {
   #main-content .upper-content {
     flex-direction: column;
   }
+  #main-content .upper-content #about {
+    max-width: 27em;
+  }
   #main-content .upper-content .abimg {
     max-width: 27em;
     height: auto;
   }
+}
+#main-content .middle-content .exp {
+  margin: 2em;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3em;
+}
+#main-content .middle-content .exp .exp-text {
+  margin-top: 5em;
+}
+#main-content .middle-content .exp .exp-text h1 {
+  text-align: center;
+  margin: 0.5em;
+  padding: 0.25em;
+  max-width: 6em;
+  background: lightblue;
+  border: 2px solid #005875;
+}
+#main-content .middle-content .exp .exp-text ul a {
+  float: left;
+  width: 20em;
+  margin: 0.25em;
+  margin-left: 1em;
+  padding: 0.5em;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  overflow: hidden;
+  color: black;
+  border: 1px solid #005875;
+}
+#main-content .middle-content .exp .exp-text ul.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+#main-content .middle-content .exp .exp-text .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 25em;
+  background-color: lightblue;
+  border: 1px solid #005875;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+}
+#main-content .middle-content .exp .exp-text .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+#main-content .middle-content .exp .work .business {
+  max-width: 30em;
+  margin: 0.5em;
 }
